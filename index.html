@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Грузоперевозки и вывоз мусора</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: url("https://images.unsplash.com/photo-1565617963119-1c1d7f2ec9d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+      color: white;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    }
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      padding: 60px;
+      border-radius: 15px;
+    }
+    .icon-box {
+      font-size: 40px;
+      color: #ffc107;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero -->
+<header class="hero text-center">
+  <div class="container overlay">
+    <h1 class="display-4 fw-bold">Вывоз мусора и грузоперевозки</h1>
+    <p class="lead">Работаем по городу и области.</p>
+    <a href="#contacts" class="btn btn-warning btn-lg mt-3">Заказать звонок</a>
+  </div>
+</header>
+
+<!-- Услуги -->
+<section class="container py-5">
+  <h2 class="text-center mb-5">Наши услуги</h2>
+  <div class="row g-4 text-center">
+    <div class="col-md-4">
+      <div class="card p-4 shadow-sm h-100">
+        <div class="icon-box mb-3"><i class="bi bi-trash"></i></div>
+        <h5>Вывоз строительного мусора</h5>
+        <p>Быстро вывезем мусор после ремонта и стройки.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-4 shadow-sm h-100">
+        <div class="icon-box mb-3"><i class="bi bi-truck"></i></div>
+        <h5>Грузоперевозки</h5>
+        <p>Перевозим мебель, материалы и любые грузы.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-4 shadow-sm h-100">
+        <div class="icon-box mb-3"><i class="bi bi-people"></i></div>
+        <h5>Услуги грузчиков</h5>
+        <p>Погрузка и разгрузка силами опытных рабочих.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Техника -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Наш транспорт</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1586201375761-83865001e17d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Газель">
+          <div class="card-body">
+            <h5 class="card-title">Газель</h5>
+            <p class="card-text">Грузоподъемность до 1.5 т. Подходит для квартирных переездов и мелких грузов.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1619021442291-6eebf1a4c4bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="КамАЗ">
+          <div class="card-body">
+            <h5 class="card-title">КамАЗ</h5>
+            <p class="card-text">Грузоподъемность до 10 т. Отличный выбор для строительного мусора и больших перевозок.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Цены -->
+<section class="container py-5">
+  <h2 class="text-center mb-5">Цены</h2>
+  <div class="row g-4 text-center">
+    <div class="col-md-4">
+      <div class="card p-4 border-warning shadow-sm h-100">
+        <h5>Газель</h5>
+        <p class="display-6 text-warning">от 2000 ₽</p>
+        <p>/ рейс</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-4 border-warning shadow-sm h-100">
+        <h5>КамАЗ</h5>
+        <p class="display-6 text-warning">от 6000 ₽</p>
+        <p>/ рейс</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-4 border-warning shadow-sm h-100">
+        <h5>Грузчики</h5>
+        <p class="display-6 text-warning">от 500 ₽</p>
+        <p>/ час</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Преимущества -->
+<section class="bg-dark text-white py-5">
+  <div class="container text-center">
+    <h2 class="mb-5">Почему мы?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <i class="bi bi-clock-history display-4 text-warning"></i>
+        <p class="mt-2">Оперативно приедем</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-cash-stack display-4 text-warning"></i>
+        <p class="mt-2">Честные цены</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-calendar-check display-4 text-warning"></i>
+        <p class="mt-2">Работаем без выходных</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Контакты -->
+<section id="contacts" class="container py-5">
+  <h2 class="text-center mb-5">Свяжитесь с нами</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <p><i class="bi bi-telephone"></i> <strong>+7 (999) 123-45-67</strong></p>
+      <p><i class="bi bi-whatsapp"></i> WhatsApp: +7 (999) 123-45-67</p>
+      <p><i class="bi bi-envelope"></i> info@example.com</p>
+    </div>
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Ваше имя">
+        </div>
+        <div class="mb-3">
+          <input type="tel" class="form-control" placeholder="Телефон">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" placeholder="Комментарий"></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning w-100">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center p-3">
+  <p>&copy; 2025 Грузоперевозки. Все права защищены.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
