@@ -10,7 +10,7 @@
     .hero {
       background: url("background.jpg") center/cover no-repeat;
       color: white;
-      min-height: 90vh;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       text-shadow: 0 2px 6px rgba(0,0,0,0.6);
@@ -41,32 +41,25 @@
 <section class="container py-5">
   <h2 class="text-center mb-5">Наши услуги</h2>
   <div class="row g-4 text-center">
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class="card p-4 shadow-sm h-100">
         <div class="icon-box mb-3"><i class="bi bi-trash"></i></div>
         <h5>Вывоз строительного мусора</h5>
         <p>Быстро вывезем мусор после ремонта и стройки.</p>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
+      <div class="card p-4 shadow-sm h-100">
+        <div class="icon-box mb-3"><i class="bi bi-house-door"></i></div>
+        <h5>Квартирные и офисные переезды</h5>
+        <p>Погрузка и разгрузка силами опытных рабочих.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
       <div class="card p-4 shadow-sm h-100">
         <div class="icon-box mb-3"><i class="bi bi-lamp"></i></div>
         <h5>Вывоз старой мебели</h5>
-        <p>Перевозим мебель, материалы и любые грузы.</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card p-4 shadow-sm h-100">
-        <div class="icon-box mb-3"><i class="bi bi-house-door"></i></div>
-        <h5>Квартирные переезды</h5>
-        <p>Погрузка и разгрузка силами опытных рабочих.</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card p-4 shadow-sm h-100">
-        <div class="icon-box mb-3"><i class="bi bi-pc-display"></i></div>
-        <h5>Офисные переезды</h5>
-        <p>Погрузка и разгрузка силами опытных рабочих.</p>
+        <p>Вывоз шкафов, диванов, секций, кроватей и т.д.</p>
       </div>
     </div>
   </div>
@@ -81,8 +74,8 @@
         <div class="card shadow-sm h-100">
           <img src="10m3.PNG" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Авто до 10 м3</h5>
-            <p class="card-text">Грузоподъемность до 1 т. Подходит для квартирных переездов и мелких грузов.</p>
+            <h5 class="card-title">Авто до 10 м<sup>3</sup></h5>
+            <p class="card-text">Грузоподъемность до 1 т. Подходит для небольших квартирных переездов и лёгких грузов.</p>
           </div>
         </div>
       </div>
@@ -90,8 +83,8 @@
         <div class="card shadow-sm h-100">
           <img src="15m3.PNG" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Авто от 10 до 16 м3</h5>
-            <p class="card-text">Грузоподъемность до 2 т. Отличный выбор для строительного мусора и больших перевозок.</p>
+            <h5 class="card-title">Авто до 16 м<sup>3</sup></h5>
+            <p class="card-text">Грузоподъемность до 2 т. Отличный выбор для квартирных переездов и грузов.</p>
           </div>
         </div>
       </div>
@@ -99,8 +92,8 @@
         <div class="card shadow-sm h-100">
           <img src="22m3.PNG" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Авто от 17 до 22 м3</h5>
-            <p class="card-text">Грузоподъемность до 3 т. Отличный выбор для строительного мусора и больших перевозок.</p>
+            <h5 class="card-title">Авто до 22 м<sup>3</sup></h5>
+            <p class="card-text">Грузоподъемность до 3 т. Отличный выбор для больших переездов и тяжёлых грузов.</p>
           </div>
         </div>
       </div>
@@ -169,13 +162,13 @@
     <div class="col-md-6">
       <form>
         <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Ваше имя">
+          <input type="text" class="form-control" name="name" id="name" placeholder="Ваше имя">
         </div>
         <div class="mb-3">
-          <input type="tel" class="form-control" placeholder="Телефон">
+          <input type="tel" class="form-control" name="tel" id="tel" placeholder="Телефон">
         </div>
         <div class="mb-3">
-          <textarea class="form-control" placeholder="Комментарий"></textarea>
+          <textarea class="form-control" name="comment" id="comment" placeholder="Комментарий"></textarea>
         </div>
         <button type="submit" class="btn btn-warning w-100">Отправить</button>
       </form>
