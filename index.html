@@ -4,17 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Грузоперевозки и вывоз мусора</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     .hero {
-      background: url("background.jpg") center/cover no-repeat;
+      min-height: 100vh;
+      position: relative;
+      color: white;
+    }
+
+    .hero-half {
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-half.left {
+      background-image: url("B2.jpg");
+    }
+
+    .hero-half.right {
+      background-image: url("B1.jpg");
+    }
+
+    @media (max-width: 767.98px) {
+      .hero {
+        flex-direction: column; /* сверху вниз */
+      }
+      .hero-half {
+        min-height: 50vh; /* каждая картинка займёт половину экрана по высоте */
+      }
+    }
+    /* .hero {
+      background: url("B1.jpg") left center / 50% auto no-repeat,
+      url("B2.jpg") right center / 50% auto no-repeat;
       color: white;
       min-height: 100vh;
       display: flex;
       align-items: center;
       text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-    }
+    } */
     .overlay {
       background: rgba(0,0,0,0.6);
       padding: 60px;
@@ -29,8 +59,17 @@
 <body>
 
 <!-- Hero -->
-<header class="hero text-center">
+<!-- <header class="hero text-center">
   <div class="container overlay">
+    <h1 class="display-4 fw-bold">ГРУЗОПЕРЕВОЗКИ И ВЫВОЗ МУСОРА</h1>
+    <p class="lead">Работаем по Минску и Минской области</p>
+    <a href="#contacts" class="btn btn-warning btn-lg mt-3">Заказать звонок</a>
+  </div>
+</header> -->
+<header class="hero d-flex">
+  <div class="hero-half left"></div>
+  <div class="hero-half right"></div>
+  <div class="container overlay position-absolute top-50 start-50 translate-middle text-center">
     <h1 class="display-4 fw-bold">ГРУЗОПЕРЕВОЗКИ И ВЫВОЗ МУСОРА</h1>
     <p class="lead">Работаем по Минску и Минской области</p>
     <a href="#contacts" class="btn btn-warning btn-lg mt-3">Заказать звонок</a>
