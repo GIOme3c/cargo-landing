@@ -1,0 +1,5 @@
+# https://turbogruz.by
+User-agent: *
+Allow: /
+
+Sitemap: https://turbogruz.by/sitemap.xml
